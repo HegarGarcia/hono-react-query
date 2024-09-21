@@ -2,6 +2,30 @@
   "name": "hono-react-query",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "scripts": {},
-  "devDependencies": {}
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@hono/zod-validator": "^0.2.2",
+    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
+    "@tanstack/react-query": "^5.56.2",
+    "@total-typescript/tsconfig": "^1.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.30.0",
+    "hono": "^4.6.2",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2",
+    "zod": "^3.23.8"
+  },
+  "peerDependencies": {
+    "@hono/zod-validator": "^0.2.2",
+    "@tanstack/react-query": "^5.56.2",
+    "hono": "^4.6.2"
+  }
 }
