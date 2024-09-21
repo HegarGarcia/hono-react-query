@@ -27,16 +27,16 @@ export async function safeFetch<
       'json'
     >;
   } catch {
-    throw new ApiError('network-error');
+    throw new ApiError('network-error', undefined);
   }
 
   if (!response.ok) {
-    throw new ApiError('unsuccessful-response');
+    throw new ApiError('unsuccessful-response', response);
   }
 
   try {
     return await response.json();
   } catch {
-    throw new ApiError('unsuccessful-response');
+    throw new ApiError('unsuccessful-response', response);
   }
 }
